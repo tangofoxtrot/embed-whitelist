@@ -2,6 +2,8 @@ allowed_sites:
   - google.com
   - youtube.com
   - www.youtube.com
+  - d.scribd.com
+  - scribd.com
 embed_attrs:
   - id
   - height

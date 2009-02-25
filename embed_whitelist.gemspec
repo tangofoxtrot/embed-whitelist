@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{embed_whitelist}
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Richard Luther"]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{Simple plugin for sanitizing embed widgets. Uses a white list approach for tags, attributes, and domains. I will be adding to the list of allowed domains.}
   s.email = ["richard@tangofoxtrot.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.rdoc"]
-  s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "lib/embed_whitelist.rb", "lib/embed_whitelistl/embed_whitelist_config.yml", "script/console", "script/destroy", "script/generate", "test/test_embed_whitelist.rb", "test/test_helper.rb"]
+  s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "lib/embed_whitelist.rb", "lib/embed_whitelist/embed_whitelist_config.yml", "script/console", "script/destroy", "script/generate", "test/test_embed_whitelist.rb", "test/test_helper.rb"]
   s.has_rdoc = true
   s.homepage = %q{FIX (url)}
   s.rdoc_options = ["--main", "README.rdoc"]
