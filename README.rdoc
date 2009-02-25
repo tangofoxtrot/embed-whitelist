@@ -1,6 +1,6 @@
 = embed_whitelist
 
-* FIX (url)
+http://github.com/tangofoxtrot/embed-whitelist/tree/master
 
 == DESCRIPTION:
 
@@ -14,15 +14,15 @@ That class will now have access to the parse_embed(some_embed_code) method.
 An EmbedWhitelist::DomainError will be raised if the domain is not in the list of allowed domains.
 All tags and attributes not listed in the config will be stripped out.
 
-class EmbedWidget < ActiveRecord::Base
-  include EmbedWhitelist
+  class EmbedWidget < ActiveRecord::Base
+    include EmbedWhitelist
 
-  before_save :check_embed_code
+    before_save :check_embed_code
   
-  def check_embed_code
-    self.embed_code = parse_embed(self.embed_code)
+    def check_embed_code
+      self.embed_code = parse_embed(self.embed_code)
+    end
   end
-end
 
 == REQUIREMENTS:
 
