@@ -1,0 +1,11 @@
+History.txt
+Manifest.txt
+README.rdoc
+Rakefile
+lib/embed_whitelist.rb
+lib/embed_whitelist/embed_whitelist_config.yml
+script/console
+script/destroy
+script/generate
+test/test_embed_whitelist.rb
+test/test_helper.rb

@@ -1,0 +1,27 @@
+allowed_sites:
+  - google.com
+  - youtube.com
+  - www.youtube.com
+embed_attrs:
+  - id
+  - height
+  - width
+  - type  
+  - src
+  - allowfullscreen
+  - allowscriptaccess
+object_attrs:
+  - height
+  - width
+  - id
+  - codebase
+  - classid
+  - id
+  - name
+param_attrs:
+  - name
+  - value
+allowed_tags:
+  - object
+  - param
+  - embed

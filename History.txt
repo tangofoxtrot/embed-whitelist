@@ -1,0 +1,4 @@
+== 0.1.0 2009-02-25
+
+* Initial release
+  - More to come but this has the basic functionality
