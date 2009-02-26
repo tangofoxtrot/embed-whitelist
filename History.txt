@@ -1,3 +1,8 @@
+== 0.1.1 2009-02-26
+
+* Minor update
+  - Added ability to override params when parsing
+
 == 0.1.0 2009-02-25
 
 * Initial release
