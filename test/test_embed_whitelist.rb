@@ -47,6 +47,11 @@ class TestEmbedWhitelist < Test::Unit::TestCase
     assert_equal check_embed_for_valid_attrs.to_html, @valid_youtube_doc.to_html 
   end
 
+  def test_check_embed_for_valid_attrs_with_override
+    open_embed(@youtube_string)
+    assert_equal check_embed_for_valid_attrs({"width" => "200"}).to_html, @valid_youtube_doc.to_html.gsub(/425/, '200')
+  end
+
   def test_check_src_domain
     assert check_src_domain("http://www.youtube.com/v/W3f6BOrD9Ek&hl=en&fs=1")
   end

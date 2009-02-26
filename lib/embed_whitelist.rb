@@ -29,10 +29,10 @@ module EmbedWhitelist
       ALLOWED_TAGS.include?(tag.to_s.downcase)
     end
     
-    def parse_embed(embed_object)
+    def parse_embed(embed_object, override_attrs={})
       open_embed(embed_object)
       check_embed_for_valid_tags
-      check_embed_for_valid_attrs
+      check_embed_for_valid_attrs(override_attrs)
       return @doc.to_html
     end
     
@@ -49,11 +49,12 @@ module EmbedWhitelist
       @doc
     end
     
-    def check_embed_for_valid_attrs
+    def check_embed_for_valid_attrs(override_attrs={})
       @doc.search('*').each do |child|
         if child.is_a?(Hpricot::Elem)
           child.attributes.each_key do |key|
             child.remove_attribute unless attr_allowed?(child.name, key)
+            child.set_attribute(key,override_attrs[key.downcase]) if override_attrs[key.downcase]
           end # end each key
           check_source_file_attr(child)
         end # end if elem
