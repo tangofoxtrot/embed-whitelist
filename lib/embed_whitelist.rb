@@ -8,7 +8,7 @@ require 'uri'
 module EmbedWhitelist
   CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), 'embed_whitelist', 'embed_whitelist_config.yml'))).freeze  
   ALLOWED_SITES = CONFIG['allowed_sites']
-  VERSION = '0.1.1'
+  VERSION = '0.1.2'
   ALLOWED_TAGS = CONFIG['allowed_tags']
   
   # def self.included(base) # :nodoc:
