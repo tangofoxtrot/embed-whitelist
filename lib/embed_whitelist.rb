@@ -53,7 +53,7 @@ module EmbedWhitelist
       @doc.search('*').each do |child|
         if child.is_a?(Hpricot::Elem)
           child.attributes.each_key do |key|
-            child.remove_attribute unless attr_allowed?(child.name, key)
+            child.remove_attribute(key.downcase) unless attr_allowed?(child.name, key)
             child.set_attribute(key,override_attrs[key.downcase]) if override_attrs[key.downcase]
           end # end each key
           check_source_file_attr(child)
