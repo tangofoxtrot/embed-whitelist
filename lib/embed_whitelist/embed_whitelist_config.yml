@@ -4,6 +4,19 @@ allowed_sites:
   - www.youtube.com
   - d.scribd.com
   - scribd.com
+  - flickr.com
+  - www.flickr.com
+  - etsy.com
+  - www.etsy.com
+  - www.twitter.com
+  - twitter.com
+  - facebook.com
+  - www.facebook.com
+  - www.lastfm.com
+  - lastfm.com
+  - www.slide.com
+  - slide.com
+  - services.brightcove.com
 embed_attrs:
   - id
   - height
@@ -12,6 +25,12 @@ embed_attrs:
   - src
   - allowfullscreen
   - allowscriptaccess
+  - bgcolor
+  - flashvars
+  - base
+  - seamlesstabbing
+  - swliveconnect
+  - pluginspage
 object_attrs:
   - height
   - width
